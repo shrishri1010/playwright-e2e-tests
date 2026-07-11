@@ -11,7 +11,7 @@ test.only("Should load homepage with correct title", async({page}) => {
     await expect(page.locator("//h1")).toHaveText("CURA Healthcare Service"); //expect() function for Assertion
 });
 
-test.only("Should load homepage with correct title page", async({page}) => {
+test("Should load homepage with correct title page", async({page}) => {
     //1.Go to homepage
     await page.goto("https://katalon-demo-cura.herokuapp.com/");
 
